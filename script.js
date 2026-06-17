@@ -417,4 +417,34 @@ document.addEventListener('DOMContentLoaded', () => {
             simIntervals.push(t7);
         });
     }
+
+    // --- Copy to Clipboard Social Links ---
+    const copyLinks = document.querySelectorAll('.copy-link');
+    copyLinks.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const val = btn.getAttribute('data-copy');
+            
+            // Copy to Clipboard
+            navigator.clipboard.writeText(val).then(() => {
+                // Update tooltip text temporarily to show "Copied!"
+                const tooltip = btn.querySelector('.tooltip-text');
+                const originalText = tooltip.textContent;
+                
+                tooltip.textContent = `Copied: ${val}`;
+                btn.classList.add('show-tooltip');
+                
+                // Hide tooltip after 2.5 seconds
+                setTimeout(() => {
+                    btn.classList.remove('show-tooltip');
+                    // Reset text back after transition ends
+                    setTimeout(() => {
+                        tooltip.textContent = originalText;
+                    }, 200);
+                }, 2500);
+            }).catch(err => {
+                console.error('Failed to copy to clipboard:', err);
+            });
+        });
+    });
 });
