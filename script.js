@@ -72,47 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
             updateGitHubUI(fallbackStats);
         });
 
-    // --- Contact Form Handling ---
-    const contactForm = document.getElementById('contactForm');
-    const formStatus = document.getElementById('formStatus');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            const submitBtn = document.getElementById('btnSubmitForm');
-            const originalBtnContent = submitBtn.innerHTML;
-            
-            // Set loading state
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = `<span class="spinner" style="width: 20px; height: 20px; border-width: 2px;"></span> <span>Sending...</span>`;
-            formStatus.className = 'form-status';
-            formStatus.textContent = '';
-
-            // Simulate form submission delay
-            setTimeout(() => {
-                // Collect values for a mock submission success
-                const name = document.getElementById('formName').value;
-                const email = document.getElementById('formEmail').value;
-                const subject = document.getElementById('formSubject').value;
-                const message = document.getElementById('formMessage').value;
-
-                if (name && email && subject && message) {
-                    formStatus.className = 'form-status success';
-                    formStatus.textContent = `Thank you, ${name}! Your message was successfully queued. I will reach out soon.`;
-                    contactForm.reset();
-                } else {
-                    formStatus.className = 'form-status error';
-                    formStatus.textContent = 'Please fill out all fields correctly.';
-                }
-
-                // Reset button
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalBtnContent;
-            }, 1200);
-        });
-    }
-
     // --- CrewAI & RAG Simulator ---
     const scenarios = {
         'ad-crew': {

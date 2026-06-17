@@ -1507,11 +1507,9 @@ a {
     border-top: 1px solid var(--border-color);
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 48px;
-    margin-top: 48px;
+.contact-info-wrapper {
+    max-width: 650px;
+    margin: 48px auto 0;
 }
 
 .contact-info-panel {
@@ -1680,9 +1678,7 @@ a {
     .edu-achieve-grid {
         grid-template-columns: 1fr;
     }
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
+
 }
 
 @media (max-width: 768px) {
