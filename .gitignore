@@ -1,0 +1,19 @@
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build outputs
+dist/
+tmp/
+out/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# System Generated config files
+.system_generated/
+.gemini/

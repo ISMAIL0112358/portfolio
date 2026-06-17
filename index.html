@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismail Taibani | Senior Backend & AI Systems Engineer</title>
+    <meta name="description" content="Portfolio of Ismail Taibani, Senior Software Engineer specialized in AI-integrated high-throughput systems, MCP tool servers, and CrewAI/RAG architectures.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background grid & glow effects -->
+    <div class="tech-grid-bg"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-terminal">&lt;</span>
+                <span class="logo-text">Ismail.T</span>
+                <span class="logo-terminal">/&gt;</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#simulator" class="nav-link">CrewAI Sim</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link nav-btn">Get In Touch</a>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu" id="mobileMenuBtn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Modal -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-close-btn" id="mobileCloseBtn"><i data-lucide="x"></i></button>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#simulator" class="mobile-link">CrewAI Sim</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#contact" class="mobile-link mobile-btn">Get In Touch</a>
+    </div>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-content">
+                <div class="availability-badge">
+                    <span class="pulse-dot"></span>
+                    <span>Available for Senior AI & Backend Roles</span>
+                </div>
+                <h1 class="hero-title">
+                    Building <span class="gradient-text">AI-Integrated</span> High-Throughput Backend Systems
+                </h1>
+                <p class="hero-subtitle">
+                    Senior Backend Engineer with 5+ years of experience engineering execution layers, Model Context Protocol (MCP) servers, and multi-agent CrewAI RAG pipelines.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#simulator" class="btn btn-primary">
+                        <i data-lucide="play-circle"></i>
+                        <span>Run CrewAI Simulator</span>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View Projects</span>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/ISMAIL0112358" target="_blank" rel="noopener" class="social-link" title="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/ismailtaibani/" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="mailto:ismail.taibani786@gmail.com" class="social-link" title="Email">
+                        <i data-lucide="mail"></i>
+                    </a>
+                    <a href="tel:+918655513140" class="social-link" title="Phone">
+                        <i data-lucide="phone"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container grid-stats">
+                <div class="stat-card">
+                    <h3 class="stat-number">5+</h3>
+                    <p class="stat-label">Years Experience</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">30+</h3>
+                    <p class="stat-label">Bulk AI Action Handlers</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">5</h3>
+                    <p class="stat-label">MCP Tool Servers Built</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">80%</h3>
+                    <p class="stat-label">Latency Reduction</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Intro Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Background</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="lead-paragraph">
+                            I architect the critical bridge between LLMs and complex API systems. 
+                        </p>
+                        <p>
+                            At Pixis, I own the execution engines that connect natural-language LLM chat assistants to five multi-platform advertising networks (Google Ads, Meta, DV360, TikTok, and LinkedIn). Through robust **MCP servers** and distributed Python architectures (Django, Celery, Redis), I have enabled seamless automated campaign changes, budgets, and targeting at scale.
+                        </p>
+                        <p>
+                            Furthermore, I specialize in designing autonomous **multi-agent systems** using frameworks like **CrewAI** integrated with advanced **RAG (Retrieval-Augmented Generation)** architectures. By orchestrating squads of specialized agents backed by semantic vector DBs, I build workflows capable of solving complex tasks with self-correction, tool use, and memory retention.
+                        </p>
+                    </div>
+                    <div class="about-avatar-card">
+                        <div class="avatar-glow-wrapper">
+                            <div class="avatar-placeholder">
+                                <i data-lucide="cpu" class="avatar-icon"></i>
+                                <span class="avatar-code">ismail_taibani.py</span>
+                            </div>
+                        </div>
+                        <div class="avatar-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">Mumbai, India</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Education</span>
+                                <span class="detail-value">M.E. Software Systems (BITS Pilani)</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Focus Area</span>
+                                <span class="detail-value">Distributed Backend & Agentic AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CrewAI & RAG Simulator Section -->
+        <section class="simulator-section" id="simulator">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Live Demonstration</span>
+                    <h2 class="section-title">Interactive CrewAI & RAG Simulator</h2>
+                    <p class="section-desc text-center">
+                        Explore how I build multi-agent systems. Choose a workflow scenario below, run the simulation, and inspect the real-time collaboration between agents and vector tools.
+                    </p>
+                </div>
+
+                <div class="simulator-card">
+                    <!-- Control Panel -->
+                    <div class="sim-controls">
+                        <div class="control-group">
+                            <label for="scenarioSelect">Select Agent Crew Scenario:</label>
+                            <div class="select-wrapper">
+                                <select id="scenarioSelect">
+                                    <option value="ad-crew">Ad Campaign Optimizer Crew (Marketing & Budget)</option>
+                                    <option value="rag-audit">Codebase Security Auditor Crew (RAG & Static Analysis)</option>
+                                    <option value="mcp-sync">Multi-Platform Ad Sync Crew (MCP & Token Auth)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-run" id="btnRunSimulation">
+                            <i data-lucide="play"></i>
+                            <span>Execute Agent Crew</span>
+                        </button>
+                    </div>
+
+                    <!-- Visual Agent Board -->
+                    <div class="sim-visual-board">
+                        <!-- Left: Input Query -->
+                        <div class="visual-query-box">
+                            <div class="box-header">Task Input</div>
+                            <div class="query-text" id="queryText">Select a scenario and hit "Execute Agent Crew" to see the agents in action.</div>
+                        </div>
+
+                        <!-- Center: Agent Visualizers -->
+                        <div class="agents-container">
+                            <!-- Agent 1 -->
+                            <div class="agent-node" id="agent1">
+                                <div class="agent-avatar"><i data-lucide="search"></i></div>
+                                <div class="agent-name">Agent 1: Researcher</div>
+                                <div class="agent-status-badge">Idle</div>
+                            </div>
+                            <!-- Connector -->
+                            <div class="agent-connector" id="connector1">
+                                <div class="connector-pulse"></div>
+                            </div>
+                            <!-- Tool / RAG Node -->
+                            <div class="agent-node tool-node" id="ragNode">
+                                <div class="agent-avatar"><i data-lucide="database"></i></div>
+                                <div class="agent-name">RAG / Vector DB</div>
+                                <div class="agent-status-badge">Ready</div>
+                            </div>
+                            <!-- Connector -->
+                            <div class="agent-connector" id="connector2">
+                                <div class="connector-pulse"></div>
+                            </div>
+                            <!-- Agent 2 -->
+                            <div class="agent-node" id="agent2">
+                                <div class="agent-avatar"><i data-lucide="edit-3"></i></div>
+                                <div class="agent-name">Agent 2: Writer</div>
+                                <div class="agent-status-badge">Idle</div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Output Box -->
+                        <div class="visual-output-box">
+                            <div class="box-header">Final Output</div>
+                            <div class="output-text" id="outputText">Waiting for execution...</div>
+                        </div>
+                    </div>
+
+                    <!-- Terminal Logs Console -->
+                    <div class="sim-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="terminal-title">crewai_agent_runner.log</div>
+                            <div class="terminal-clear" id="btnClearLogs" title="Clear Console"><i data-lucide="trash-2"></i></div>
+                        </div>
+                        <div class="terminal-body" id="terminalLogs">
+                            <div class="log-line text-muted">&gt; System initialized. Choose a scenario and run the crew simulation to view raw agent logs.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Career Timeline</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                </div>
+
+                <div class="timeline">
+                    <!-- Pixis SDE 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header-info">
+                                <span class="timeline-date">Mar 2023 – Present</span>
+                                <h3 class="timeline-job-title">Senior Software Engineer (SDE 3)</h3>
+                                <span class="timeline-company">Pixis</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Architecting the execution layer and MCP agent ecosystems powering Pixis' LLM advertising assistant, bridging natural language to multi-platform API controls.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li><strong>AI Advertising Assistant:</strong> Designed and implemented ~30 bulk action handlers (campaigns, ad groups, ads, targeting, conversion actions) executing natural-language requests from LLMs with partial-failure & idempotency safeguards.</li>
+                                <li><strong>MCP Tool Servers:</strong> Built Model Context Protocol servers integrating five key ad platforms (Google Ads, Meta, DV360, TikTok, LinkedIn) over JSON-RPC & streamable HTTP with account OAuth managed by a custom Token Management Service.</li>
+                                <li><strong>YouTube Ads API:</strong> Bypassed native API limitations by building custom Google Ads scripts to support recommendations, boosting active channel revenue.</li>
+                                <li><strong>Collaboration:</strong> Onboarded Pinterest, Apple Ads, Facebook, etc., aligning spending recommendations and optimizing platform integrations.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tech-tag">MCP</span>
+                                <span class="tech-tag">JSON-RPC</span>
+                                <span class="tech-tag">OAuth 2.0</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">LLM Tools</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pixis SDE -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header-info">
+                                <span class="timeline-date">Apr 2022 – Mar 2023</span>
+                                <h3 class="timeline-job-title">Software Engineer (Performance)</h3>
+                                <span class="timeline-company">Pixis</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Owned the core execution framework across six ad platforms, focusing on latency reductions and pipeline consolidations.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li><strong>Core Execution Engine:</strong> Developed a highly robust Django/Celery service managing AI recommendations with retry mechanics and partial-failure recovery.</li>
+                                <li><strong>80% Latency Reduction:</strong> Redesigned two critical transaction services to slash latency, ensuring fast application of AI optimization triggers.</li>
+                                <li><strong>Unified Ad-Spend Service:</strong> Built a consolidated adjustment service to unify ad spend adjustments across five pipelines, decreasing duplicate codes.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">Celery</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">API Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pixis SDE I -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header-info">
+                                <span class="timeline-date">Sep 2020 – Mar 2022</span>
+                                <h3 class="timeline-job-title">Software Engineer I (Cocreate)</h3>
+                                <span class="timeline-company">Pixis</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Developed core collaboration and microservice platforms for Pixis' design workflows.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li><strong>Notification Microservice:</strong> Built an end-to-end notification microservice managing in-app alerts, emails, and manager settings.</li>
+                                <li><strong>Real-time Collaboration:</strong> Engineered a multi-user visual document collaboration layer using Django Channels and WebSockets.</li>
+                                <li><strong>Audit & Secure Sharing:</strong> Implemented audit logging services for downstream product metrics, and password-protected sharing controls.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tech-tag">Django Channels</span>
+                                <span class="tech-tag">WebSockets</span>
+                                <span class="tech-tag">Microservices</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IDfy Intern -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header-info">
+                                <span class="timeline-date">Jan 2020 – Jun 2020</span>
+                                <h3 class="timeline-job-title">Software Engineer Intern</h3>
+                                <span class="timeline-company">IDfy</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Automated back-end verification workflows and streamlined document APIs.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li><strong>Verification Scraping:</strong> Programmed automated data extraction scrapers, improving IDfy's onboarding efficiency and precision.</li>
+                                <li><strong>API Refactoring:</strong> Created rest APIs for BGV (background verification) project, guaranteeing secure validation transfers.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Web Scraping</span>
+                                <span class="tech-tag">REST APIs</span>
+                                <span class="tech-tag">Flask</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MCP & AI Architecture Deep Dive (Focus Section) -->
+        <section class="mcp-showcase-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Specialized Expertise</span>
+                    <h2 class="section-title">MCP Tool Servers & RAG Architecture</h2>
+                    <p class="section-desc text-center">
+                        Bridging high-level artificial intelligence with production systems through robust engineering.
+                    </p>
+                </div>
+                
+                <div class="grid-2-cols">
+                    <!-- Left block: MCP and Tool Use -->
+                    <div class="interactive-card">
+                        <div class="card-icon-header">
+                            <i data-lucide="cpu" class="accent-icon"></i>
+                            <h3>Model Context Protocol (MCP) Servers</h3>
+                        </div>
+                        <p>
+                            I build and maintain standard-compliant MCP servers that allow LLMs to directly read, query, and edit live platforms. By establishing JSON-RPC and Streamable HTTP endpoints, models can invoke complex API capabilities safely.
+                        </p>
+                        <ul class="checklist">
+                            <li><i data-lucide="check-circle-2" class="check-icon"></i> OAuth 2.0 Token management systems securing cross-account access</li>
+                            <li><i data-lucide="check-circle-2" class="check-icon"></i> Dynamic tool schemas generated via Zod and Pydantic</li>
+                            <li><i data-lucide="check-circle-2" class="check-icon"></i> Idempotent write safety for batch executions across Facebook & Google Ads</li>
+                        </ul>
+                    </div>
+
+                    <!-- Right block: CrewAI and Advanced RAG -->
+                    <div class="interactive-card">
+                        <div class="card-icon-header">
+                            <i data-lucide="network" class="accent-icon"></i>
+                            <h3>CrewAI Multi-Agent RAG Orchestration</h3>
+                        </div>
+                        <p>
+                            I design structured agent squads to tackle complex objectives. Using tools, recursive tasks, and RAG search components, agents operate with autonomous reasoning, checking their own work and referencing specialized knowledge bases.
+                        </p>
+                        <ul class="checklist">
+                            <li><i data-lucide="check-circle-2" class="check-icon"></i> Sequential and hierarchical agent task coordination workflows</li>
+                            <li><i data-lucide="check-circle-2" class="check-icon"></i> Semantic Vector DB retrieval with custom embedding chunking strategies</li>
+                            <li><i data-lucide="check-circle-2" class="check-icon"></i> In-memory state tracking to ensure continuous reasoning and self-reflection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i data-lucide="terminal" class="proj-placeholder-icon"></i>
+                            <span class="project-tag">AI & MCP</span>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Ad-Tech MCP Server Suite</h3>
+                            <p class="project-desc">
+                                A suite of JSON-RPC Model Context Protocol servers connecting Claude/GPT-4 to major ad APIs (Meta, Google, DV360, TikTok, LinkedIn) with secure OAuth integrations.
+                            </p>
+                            <div class="project-stack">
+                                <span>FastAPI</span>
+                                <span>Pydantic</span>
+                                <span>OAuth 2.0</span>
+                                <span>JSON-RPC</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ISMAIL0112358" target="_blank" rel="noopener" class="project-link-btn">
+                                    <i data-lucide="github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i data-lucide="git-branch" class="proj-placeholder-icon"></i>
+                            <span class="project-tag">Distributed Systems</span>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Pixis Execution Engine</h3>
+                            <p class="project-desc">
+                                A Django and Celery based recommendation engine executing ~30 batch marketing actions concurrently with advanced retry, partial-failure, and idempotency guarantees.
+                            </p>
+                            <div class="project-stack">
+                                <span>Django</span>
+                                <span>Celery</span>
+                                <span>Redis</span>
+                                <span>GCP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ISMAIL0112358" target="_blank" rel="noopener" class="project-link-btn">
+                                    <i data-lucide="github"></i>
+                                    <span>Details</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i data-lucide="users" class="proj-placeholder-icon"></i>
+                            <span class="project-tag">WebSockets</span>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Real-Time Designer Collab Layer</h3>
+                            <p class="project-desc">
+                                A real-time collaboration layer enabling multi-user workspace editing of layouts and designs, backed by Django Channels and WebSockets.
+                            </p>
+                            <div class="project-stack">
+                                <span>Django Channels</span>
+                                <span>WebSockets</span>
+                                <span>Redis</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ISMAIL0112358" target="_blank" rel="noopener" class="project-link-btn">
+                                    <i data-lucide="github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i data-lucide="bell" class="proj-placeholder-icon"></i>
+                            <span class="project-tag">Microservices</span>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Notification Microservice Engine</h3>
+                            <p class="project-desc">
+                                Scalable notification engine handling multi-channel outputs (in-app, email, webhooks) with delivery retry configurations and configuration portals.
+                            </p>
+                            <div class="project-stack">
+                                <span>Django</span>
+                                <span>RabbitMQ</span>
+                                <span>PostgreSQL</span>
+                                <span>Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ISMAIL0112358" target="_blank" rel="noopener" class="project-link-btn">
+                                    <i data-lucide="github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Dashboard Section -->
+        <section class="github-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Open Source</span>
+                    <h2 class="section-title">GitHub Developer Stats</h2>
+                </div>
+
+                <div class="github-stats-card" id="githubStatsCard">
+                    <div class="github-loading">
+                        <div class="spinner"></div>
+                        <p>Syncing developer statistics from GitHub...</p>
+                    </div>
+                    <!-- Stats Content (loaded by JS) -->
+                    <div class="github-loaded-content hidden" id="githubContent">
+                        <div class="github-profile-header">
+                            <img src="" alt="Ismail Taibani Profile" id="gitAvatar" class="git-avatar">
+                            <div class="git-meta">
+                                <h3 id="gitName">Ismail Taibani</h3>
+                                <p id="gitBio" class="text-muted"></p>
+                                <a href="https://github.com/ISMAIL0112358" target="_blank" rel="noopener" class="git-link">
+                                    <i data-lucide="external-link"></i>
+                                    <span>github.com/ISMAIL0112358</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="github-metrics-grid">
+                            <div class="git-metric">
+                                <span class="metric-val" id="gitRepos">--</span>
+                                <span class="metric-lbl">Public Repos</span>
+                            </div>
+                            <div class="git-metric">
+                                <span class="metric-val" id="gitFollowers">--</span>
+                                <span class="metric-lbl">Followers</span>
+                            </div>
+                            <div class="git-metric">
+                                <span class="metric-val" id="gitLocation">--</span>
+                                <span class="metric-lbl">Location</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Grid Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Technical Stack</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Languages -->
+                    <div class="skills-card">
+                        <h3>Languages & Runtimes</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: AI / LLM -->
+                    <div class="skills-card highlight-card">
+                        <h3>AI / LLM & Agents</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">MCP (Model Context Protocol)</span>
+                            <span class="skill-tag">CrewAI</span>
+                            <span class="skill-tag">RAG / Semantic Search</span>
+                            <span class="skill-tag">JSON-RPC</span>
+                            <span class="skill-tag">OpenAI & Anthropic SDKs</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">Agentic Tool-Use</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Frameworks -->
+                    <div class="skills-card">
+                        <h3>Frameworks</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">React</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Data & Messaging -->
+                    <div class="skills-card">
+                        <h3>Data & Messaging</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Celery</span>
+                            <span class="skill-tag">BullMQ</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 5: Cloud & DevOps -->
+                    <div class="skills-card">
+                        <h3>Cloud & DevOps</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 6: Schemas & Auth -->
+                    <div class="skills-card">
+                        <h3>Auth & Validation</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">OAuth 2.0</span>
+                            <span class="skill-tag">Auth0</span>
+                            <span class="skill-tag">JWT</span>
+                            <span class="skill-tag">Zod</span>
+                            <span class="skill-tag">Pydantic</span>
+                            <span class="skill-tag">JSON Schema</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Certifications -->
+                <div class="edu-achieve-grid">
+                    <!-- Achievements -->
+                    <div class="edu-card">
+                        <div class="edu-header">
+                            <i data-lucide="award" class="edu-icon"></i>
+                            <h3>Key Achievements</h3>
+                        </div>
+                        <ul class="edu-list">
+                            <li>
+                                <strong>High Performer Certificate (×2):</strong>
+                                <span>Awarded by Pixis Director of Engineering for foundational execution engine contributions.</span>
+                            </li>
+                            <li>
+                                <strong>Infrastructure Optimization:</strong>
+                                <span>Audited GCP databases and services to cut monthly cloud hosting costs significantly.</span>
+                            </li>
+                            <li>
+                                <strong>Google Ads Execution Platform:</strong>
+                                <span>Built Google Ads integration from scratch to feature-parity with Meta inside one quarter.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="edu-card">
+                        <div class="edu-header">
+                            <i data-lucide="graduation-cap" class="edu-icon"></i>
+                            <h3>Education</h3>
+                        </div>
+                        <ul class="edu-list">
+                            <li>
+                                <strong>M.E., Software Systems:</strong>
+                                <span class="edu-meta">BITS Pilani (Dept. of Computer Science & Engineering) | 2018 – 2020</span>
+                            </li>
+                            <li>
+                                <strong>B.E., Electronics & Telecommunication:</strong>
+                                <span class="edu-meta">Mumbai University | 2012 – 2016</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Communication</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-desc text-center">
+                        Have a project in mind, need help building MCP tool integration, or looking for a backend/AI engineer? Drop a message!
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <h3>Contact Information</h3>
+                        <p class="contact-panel-desc">
+                            Feel free to reach out via email, phone, or LinkedIn. I am always happy to discuss new opportunities or technical challenges.
+                        </p>
+                        <div class="contact-methods">
+                            <a href="mailto:ismail.taibani786@gmail.com" class="method-item">
+                                <i data-lucide="mail"></i>
+                                <div>
+                                    <span class="method-label">Email</span>
+                                    <span class="method-value">ismail.taibani786@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="tel:+918655513140" class="method-item">
+                                <i data-lucide="phone"></i>
+                                <div>
+                                    <span class="method-label">Phone</span>
+                                    <span class="method-value">+91-8655513140</span>
+                                </div>
+                            </a>
+                            <a href="https://linkedin.com/in/ismailtaibani/" target="_blank" rel="noopener" class="method-item">
+                                <i data-lucide="linkedin"></i>
+                                <div>
+                                    <span class="method-label">LinkedIn</span>
+                                    <span class="method-value">linkedin.com/in/ismailtaibani/</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="formName">Name</label>
+                                <input type="text" id="formName" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="formEmail">Email</label>
+                                <input type="email" id="formEmail" name="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubject">Subject</label>
+                            <input type="text" id="formSubject" name="subject" required placeholder="Project collaboration proposal">
+                        </div>
+                        <div class="form-group">
+                            <label for="formMessage">Message</label>
+                            <textarea id="formMessage" name="message" required rows="5" placeholder="Details of your request..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="btnSubmitForm">
+                            <i data-lucide="send"></i>
+                            <span>Send Message</span>
+                        </button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Ismail Taibani. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/ISMAIL0112358" target="_blank" rel="noopener"><i data-lucide="github"></i></a>
+                <a href="https://linkedin.com/in/ismailtaibani/" target="_blank" rel="noopener"><i data-lucide="linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
