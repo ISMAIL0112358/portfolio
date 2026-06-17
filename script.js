@@ -101,13 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     formStatus.className = 'form-status success';
                     formStatus.textContent = `Thank you, ${name}! Your message was successfully queued. I will reach out soon.`;
                     contactForm.reset();
-                    
-                    // Optional fallback redirect to email
-                    const mailtoUrl = `mailto:ismail.taibani786@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + name + " <" + email + ">\n\n" + message)}`;
-                    // Open mail client after a small delay
-                    setTimeout(() => {
-                        window.location.href = mailtoUrl;
-                    }, 1500);
                 } else {
                     formStatus.className = 'form-status error';
                     formStatus.textContent = 'Please fill out all fields correctly.';
