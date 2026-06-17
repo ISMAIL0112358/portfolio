@@ -1555,10 +1555,11 @@ a {
     background: rgba(6, 182, 212, 0.03);
 }
 
-.method-item i {
+.method-item i, .method-item svg {
     width: 24px;
     height: 24px;
     color: var(--accent-cyan);
+    flex-shrink: 0;
 }
 
 .method-label {
